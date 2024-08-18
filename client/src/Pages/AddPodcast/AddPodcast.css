@@ -1,0 +1,180 @@
+.add-podcast-page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.path {
+    font-size: 14px;
+    color: #7E22CE;
+}
+
+.top-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.top-icons .icon-bell, .top-icons .icon-exit {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.file-upload, .videos-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.file-upload i.icon-cloud-upload {
+    font-size: 36px;
+    color: #7E22CE;
+    margin-bottom: 10px;
+}
+
+.file-upload p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.file-upload small {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.file-upload .select-file {
+    background-color: #7E22CE;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.file-upload .select-file:hover {
+    background-color: #5c19a0;
+}
+
+.videos-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.videos-container h2 {
+    font-size: 20px;
+    color: #7E22CE;
+    margin-bottom: 20px;
+}
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.video-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.video-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .file-upload, .videos-container {
+        text-align: center;
+    }
+
+    .video-list {
+        flex-direction: column;
+    }
+}
+.video-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.video-table th, .video-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.video-table th {
+    background-color: #f2f2f2;
+    color: black;
+    text-align: left;
+}
+
+.video-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.video-table tr {
+    transition: background-color 0.3s ease;
+}
+
+.video-table button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #7E22CE;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.video-table button:hover {
+    background-color: #5a17a8;
+}

@@ -1,0 +1,105 @@
+
+.dashboard-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 10vw;
+    height: 5vh;
+    top: 50px;
+    left: 125px;
+}
+
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.content-section {
+    margin-top: 2px;
+    /*height: 3vh;*/
+}
+
+.content-section img{
+    width: 50vw;
+    height: 30vh;
+    top: 50px;
+    left: 125px;
+
+}
+
+.content-section h2 {
+    font-size: 1.6rem;
+    color: #6b21a8; /* Primary color */
+}
+
+.dashboard-image {
+    max-width: 50%;
+    /*max-height: 10%;*/
+    margin: 20px 0;
+}
+
+.description-text {
+    font-size: 0.8rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.create-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #2C2143; /* Dark purple color */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.create-button .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    color: #2C2143; /* Dark purple color for the icon */
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.create-button:hover {
+    background-color: #3B2B5B; /* Slightly lighter shade on hover */
+}
+
+
+.icon img{
+    width: 6vh;
+    height: 5vh;
+    top: 72px;
+    left: 1663px;
+    padding: 3.96px 4.49px 3.94px 4.5px;
+}

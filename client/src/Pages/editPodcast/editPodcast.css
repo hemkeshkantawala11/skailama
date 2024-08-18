@@ -1,0 +1,65 @@
+.edit-transcript-page {
+    display: flex;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #F9FAFB;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #3B82F6;
+    margin-right: 5px;
+}
+
+.breadcrumb span {
+    color: #1F2937;
+}
+
+.transcript-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transcript-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.transcript-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #1F2937;
+}
+
+.edit-button {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.transcript-content h3 {
+    color: #3B82F6;
+    margin-bottom: 10px;
+}
+
+.transcript-content p {
+    color: #4B5563;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}

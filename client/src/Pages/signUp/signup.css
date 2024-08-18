@@ -1,0 +1,131 @@
+#full-logo {
+    width: 100px;
+    margin-bottom: 30px;
+    z-index: 3;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-page {
+    display: flex;
+    height: 100vh;
+}
+
+.promo-section {
+    flex: 1;
+    background-image: url('../../Resources/login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 300px;
+}
+
+.branding {
+    text-align: center;
+}
+
+.branding .logo {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.branding h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.branding p {
+    font-size: 1.2rem;
+}
+
+.login-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+    width: 33vw;
+    height: 100vh;
+}
+.paragraph{
+    color: rgb(126, 34, 206);
+    font-size: 2rem;
+}
+.login-box {
+    /*padding: 200px;*/
+    /*padding-right: 300px;*/
+
+    /*border-radius: 10px;*/
+
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background: #7A2CC1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #6A1BB5;
+}
+
+.alt-login {
+    margin: 20px 0;
+}
+
+.alt-login p {
+    margin: 10px 0;
+}
+
+.google-login {
+    padding: 10px;
+    border: 1px solid #CCC;
+    background: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.forgot-password,
+.sign-up {
+    font-size: 0.9rem;
+}
+
+.forgot-password a,
+.sign-up a {
+    color: #7A2CC1;
+    text-decoration: none;
+}
