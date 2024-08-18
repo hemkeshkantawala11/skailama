@@ -18,7 +18,7 @@ const UserSettings = () => {
     const getUser = async () => {
         const token = Cookies.get('token');
         try {
-            const response = await axios.get('http://localhost:8080/users/get-current-user', {
+            const response = await axios.get('https://skailama-2dwr.onrender.com/users/get-current-user', {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`
@@ -36,7 +36,7 @@ const UserSettings = () => {
     const saveChanges = async () => {
         const token = Cookies.get('token');
         try {
-            const response = await axios.put('http://localhost:8080/users/update-user', {
+            const response = await axios.put('https://skailama-2dwr.onrender.com/users/update-user', {
                 name: user,
                 email: email
             }, {

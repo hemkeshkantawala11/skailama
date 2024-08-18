@@ -18,7 +18,7 @@ const LoginPage = () => {
     const checkUser = async () => {
         const token = Cookies.get('token');
         try {
-            const response = await axios.get('http://localhost:8080/users/get-current-user', {
+            const response = await axios.get('https://skailama-2dwr.onrender.com/users/get-current-user', {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`
@@ -42,7 +42,7 @@ const LoginPage = () => {
             const email = user.email;
 
             // Send email to backend to store in the database
-            const response = await axios.post('http://localhost:8080/api/user/signup/google',
+            const response = await axios.post('https://skailama-2dwr.onrender.com/api/user/signup/google',
                 {
                     email: email
                 },
@@ -68,7 +68,7 @@ const LoginPage = () => {
     const submit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/api/user/login',
+            const response = await axios.post('https://skailama-2dwr.onrender.com/api/user/login',
                 {
                     email: email,
                     password: password
@@ -85,7 +85,7 @@ const LoginPage = () => {
 
                 const token2 = Cookies.get('token');
 
-                const projectsResponse = await axios.get('http://localhost:8080/projects', {
+                const projectsResponse = await axios.get('https://skailama-2dwr.onrender.com/projects', {
                     headers: {
                         Authorization: `Bearer ${token2}`
                     },

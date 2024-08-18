@@ -18,7 +18,7 @@ const ProjectsPage = () => {
     const projectAdd = async (data) => {
         const token = Cookies.get('token');
         try {
-            const projectResponse = await axios.post('http://localhost:8080/projects', data, {
+            const projectResponse = await axios.post('https://skailama-2dwr.onrender.com/projects', data, {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`
@@ -34,7 +34,7 @@ const ProjectsPage = () => {
     const getProjects = async () => {
         const token = Cookies.get('token');
         try {
-            const response = await axios.get('http://localhost:8080/projects', {
+            const response = await axios.get('https://skailama-2dwr.onrender.com/projects', {
                 headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json'

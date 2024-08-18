@@ -30,7 +30,7 @@ const AddPodcast = () => {
         const token = Cookies.get('token');
         const id = Cookies.get('currentProjectId');
         try {
-            const response = await axios.get(`http://localhost:8080/projects/get-project/${id}`, {
+            const response = await axios.get(`https://skailama-2dwr.onrender.com/projects/get-project/${id}`, {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`
@@ -50,7 +50,7 @@ const AddPodcast = () => {
     const getUser = async () => {
         const token = Cookies.get('token');
         try {
-            const response = await axios.get('http://localhost:8080/users/get-current-user', {
+            const response = await axios.get('https://skailama-2dwr.onrender.com/users/get-current-user', {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`
@@ -68,7 +68,7 @@ const AddPodcast = () => {
     const checkVideos = async () => {
         const projectId = Cookies.get('currentProjectId');
         try {
-            const response = await axios.get(`http://localhost:8080/videos/get-by-project`, {
+            const response = await axios.get(`https://skailama-2dwr.onrender.com/videos/get-by-project`, {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${projectId}`
@@ -90,7 +90,7 @@ const AddPodcast = () => {
     const deleteAVideo = async (id) => {
         const token = Cookies.get('token');
         try {
-            const response = await axios.delete(`http://localhost:8080/videos/delete-video/${id}`, {
+            const response = await axios.delete(`https://skailama-2dwr.onrender.com/videos/delete-video/${id}`, {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`
@@ -111,7 +111,7 @@ const AddPodcast = () => {
         const token = Cookies.get('token');
         setLoading(true);
         try {
-            const videoResponse = await axios.post('http://localhost:8080/videos/add-video', {
+            const videoResponse = await axios.post('https://skailama-2dwr.onrender.com/videos/add-video', {
                 name: data.name,
                 transcript: data.transcript,
                 projectId: data.projectId

@@ -18,7 +18,7 @@ const Dashboard = () => {
     const get_current_user = async () => {
         const token = Cookies.get('token');
         try {
-            const userResponse = await axios.get('http://localhost:8080/users/get-current-user', {
+            const userResponse = await axios.get('https://skailama-2dwr.onrender.com/users/get-current-user', {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`
@@ -33,7 +33,7 @@ const Dashboard = () => {
     const redirectingCheck = async () => {
         const token3 = Cookies.get('token');
 
-        const projectsResponse = await axios.get('http://localhost:8080/projects', {
+        const projectsResponse = await axios.get('https://skailama-2dwr.onrender.com/projects', {
             headers: {
                 Authorization: `Bearer ${token3}`
             }
@@ -49,7 +49,7 @@ const Dashboard = () => {
     const projectAdd = async (data) => {
         const token = Cookies.get('token');
         try {
-            const projectResponse = await axios.post('http://localhost:8080/projects', data, {
+            const projectResponse = await axios.post('https://skailama-2dwr.onrender.com/projects', data, {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`

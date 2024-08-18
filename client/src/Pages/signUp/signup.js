@@ -13,7 +13,7 @@ const SignUp = () => {
     const submit = async (e) => {
         e.preventDefault();
         console.log("Reached Submit ");
-        const response  = await axios.post('http://localhost:8080/api/user/signup/',
+        const response  = await axios.post('https://skailama-2dwr.onrender.com/api/user/signup/',
             {
                 email: email,
                 password: password,

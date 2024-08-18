@@ -18,7 +18,7 @@ const EditTranscriptPage = () => {
         const token = Cookies.get('token');
         const id = Cookies.get('currentProjectId');
         try {
-            const response = await axios.get(`http://localhost:8080/projects/get-project/${id}`, {
+            const response = await axios.get(`https://skailama-2dwr.onrender.com/projects/get-project/${id}`, {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`
@@ -38,7 +38,7 @@ const EditTranscriptPage = () => {
     const getUser = async () => {
         const token = Cookies.get('token');
         try {
-            const response = await axios.get('http://localhost:8080/users/get-current-user', {
+            const response = await axios.get('https://skailama-2dwr.onrender.com/users/get-current-user', {
                 headers: {
                     ContentType: 'application/json',
                     Authorization: `Bearer ${token}`
@@ -56,7 +56,7 @@ const EditTranscriptPage = () => {
     const getTranscript = async () => {
         const id = Cookies.get('currentVideoId');
         const token = Cookies.get('token');
-        const response = await axios.get(`http://localhost:8080/transcript/get-transcript/${id}`, {
+        const response = await axios.get(`https://skailama-2dwr.onrender.com/transcript/get-transcript/${id}`, {
             headers: {
                 ContentType: 'application/json',
                 bearer: `Bearer ${token}`
@@ -73,7 +73,7 @@ const EditTranscriptPage = () => {
         const id = Cookies.get('currentVideoId');
         const token = Cookies.get('token');
         try {
-            const response = await axios.put(`http://localhost:8080/transcript/update-transcript/${id}`, {
+            const response = await axios.put(`https://skailama-2dwr.onrender.com/transcript/update-transcript/${id}`, {
                 transcript
             }, {
                 headers: {
