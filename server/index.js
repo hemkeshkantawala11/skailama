@@ -12,10 +12,17 @@ const passport = require("passport");
 
 const app = express();
 
-app.use(cors({
-    origin: 'https://skailama-rust.vercel.app/', // Frontend URL
-    credentials: true
-}));
+// app.use(cors({
+//     origin: 'https://skailama-rust.vercel.app/', // Frontend URL
+//     credentials: true
+// }));
+
+app.use(cors());
+
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
 
 app.use(logger('dev'));
 app.use(express.json());
