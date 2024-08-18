@@ -2,27 +2,22 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require("mongoose");
-const cors = require('cors'); // Add CORS middleware
+const cors = require('cors');
 const loginRoutes = require('./Routes/loginRoute');
 const signupRoutes = require('./Routes/signupRoute');
-const port = process.env.PORT || 8080;
-require("dotenv").config();
 const expressSession = require("express-session");
 const passport = require("passport");
+require("dotenv").config();
 
 const app = express();
+const port = process.env.PORT || 8080;
 
-// app.use(cors({
-//     origin: 'https://skailama-rust.vercel.app/', // Frontend URL
-//     credentials: true
-// }));
+const corsOptions = {
+    origin: 'https://skailama-rust.vercel.app', // Frontend URL without the trailing slash
+    credentials: true, // Allows cookies and HTTP authentication
+};
 
-app.use(cors());
-
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    next();
-});
+app.use(cors(corsOptions));
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -38,7 +33,7 @@ mongoose.connect(process.env.MONGO_URL)
         console.log(err);
     });
 
-
+// Routes
 app.use("/api/user/login", loginRoutes);
 app.use("/api/user/signup", signupRoutes);
 app.use("/projects", require("./Routes/projectsRoute"));
