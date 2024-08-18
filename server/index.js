@@ -13,7 +13,7 @@ const passport = require("passport");
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Frontend URL
+    origin: 'https://skailama-rust.vercel.app/', // Frontend URL
     credentials: true
 }));
 
