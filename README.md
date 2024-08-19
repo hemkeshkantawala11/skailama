@@ -3,6 +3,8 @@
 This project is designed to handle video transcripts for users. It allows users to create projects (such as podcasts), add transcripts for different videos, and manage them effortlessly. This is the initial version (V0) of the project, with plans to integrate AI features for automatic transcript generation in future releases.
 Also this version of the project is as per the assignment given by the company called **ZURA VENTURES** supported company called **SKAILAMA**.
 
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/13f18780-4104-4d25-aeda-68ef9b111d5c">
+
 ## Table of Contents
 1. [Features](#features)
 2. [Tech Stack](#tech-stack)
