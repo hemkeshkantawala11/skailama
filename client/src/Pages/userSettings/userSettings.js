@@ -13,6 +13,8 @@ const UserSettings = () => {
     const [showSuccessModal, setShowSuccessModal] = useState(false);
     const logout = () => {
         Cookies.remove('token');
+        Cookies.remove('currentProjectId');
+        Cookies.remove('currentVideoId');
         window.location.href = '/';
     }
     const getUser = async () => {
