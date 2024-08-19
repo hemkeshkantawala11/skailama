@@ -14,7 +14,7 @@ const LeftSideNavBar = ({Username, email}) => {
                  <img src={fullLogo} alt="logo"/>
              </div>
             <div className={"links"}>
-                <Link to="/add-podcast" className="nav-link">+ Add your Podcast(s)</Link>
+                <Link to="/podcasts" className="nav-link">+ Add your Podcast(s)</Link>
                 <Link to="/create-repurpose" className="nav-link">Create & Repurpose</Link>
                 <Link to="/podcast-widget" className="nav-link">Podcast Widget</Link>
                 <Link to="/upgrade" className="nav-link">Upgrade</Link>
