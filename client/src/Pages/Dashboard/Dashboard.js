@@ -1,4 +1,3 @@
-// client/src/Pages/Dashboard/Dashboard.js
 import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import dashboardImage from '../../Resources/dash.svg';
@@ -30,6 +29,7 @@ const Dashboard = () => {
             console.error('Error fetching user or hospital data:', error);
         }
     }
+
     const redirectingCheck = async () => {
         const token3 = Cookies.get('token');
 
@@ -41,8 +41,6 @@ const Dashboard = () => {
         console.log('Projects response: ', projectsResponse.data.projects.length);
         if (projectsResponse.data.projects.length > 0) {
             navigate('/projects');
-        } else {
-            navigate('/dashboard');
         }
     }
 
@@ -56,6 +54,7 @@ const Dashboard = () => {
                 }
             });
             console.log("Project Data " + JSON.stringify(projectResponse.data));
+            navigate('/projects');
         } catch (error) {
             console.error('Error adding project:', error);
         }

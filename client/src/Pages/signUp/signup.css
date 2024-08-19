@@ -71,18 +71,18 @@ body {
     margin-bottom: 30px;
 }
 
-.input-group {
+.input-group3 {
     margin-bottom: 20px;
     text-align: left;
 }
 
-.input-group label {
+.input-group3 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.input-group input {
+.input-group3 input {
     width: 100%;
     padding: 10px;
     border: 1px solid #CCC;
@@ -128,4 +128,11 @@ body {
 .sign-up a {
     color: #7A2CC1;
     text-decoration: none;
+}
+
+.logo>img {
+    width: 1px;
+    height: 3000px;
+    margin-bottom: 30px;
+    z-index: 3;
 }

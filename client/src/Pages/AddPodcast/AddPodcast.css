@@ -42,6 +42,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    gap: 20px;
 }
 
 .file-upload, .videos-container {
