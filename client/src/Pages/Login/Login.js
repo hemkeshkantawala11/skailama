@@ -106,7 +106,7 @@ const LoginPage = () => {
     };
 
     useEffect(() => {
-        // checkUser();
+        checkUser();
     }, []);
 
     return (
